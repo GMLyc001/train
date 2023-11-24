@@ -12,7 +12,7 @@ from torch.utils.tensorboard import SummaryWriter
 import torchvision.utils as vutils
 
 def main():
-    dataset = ImagesDataset(images_path=r"D:\Anaconda\envs\test\TRYTRY\datasets\picture384\*.jpg")
+    dataset = ImagesDataset(images_path="/content/train/datasets/pictures/*.jpg")
     dataloader = DataLoader(dataset, batch_size=config['batch_size'], shuffle=True)
     '''
      使用PyTorch的DataLoader类创建一个用于迭代训练数据的数据加载器
