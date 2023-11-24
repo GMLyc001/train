@@ -51,6 +51,7 @@ def main():
     writer = SummaryWriter('./torchgan_logs')
 
     for epoch in range(config['epochs']):
+        print(f"开始第 {epoch} 轮训练")
         start_time = time.time()#计算每个epoch的运行时间，以监控训练过程的效率
         total_generator_loss = 0.0#损失植
         total_discriminator_loss = 0.0
